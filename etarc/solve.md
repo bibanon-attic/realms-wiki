@@ -1,0 +1,23 @@
+## Solutions
+
+
+One of the first problems in archiving data is managing the archival process, upon deciding what to archive.
+
+
+
+There are several solutions that are available for managing the archival, in terms of management software. One solution, which is highly recommended is using a biblo software such as [OpenBiblio](http://obiblio.sourceforge.net/) or [PMB PhpMyBibli](https://en.wikipedia.org/wiki/PMB_%28software%29) slightly modified to track archival process and index tapes.
+
+Another idea is to simply run [Gazelle](https://github.com/WhatCD/Gazelle) and have a private torrent tracker, with minimal modifications we could use it to track requests, torrent privately the data and archive it as a group. It also includes a forum and supports private (Invite only) registration. The same archive backend that [WhatCD](http://ssl.what.cd) uses. It contains a system for seed requests and upload requests for torrents that don't yet exist. One stipulation of running Gazelle is that you cannot share your torrent file as-is and must edit it as the tracker uses a private hash key for each user to connect and torrent, being a private auth tracker. We would also have to decide how concerned we are about ratio, if we aren't concerned about ratio it should be okay to allow the addition of other trackers and possibly DHT on the torrent files.
+
+
+The proposed system comprises of the following points:
+
+1. The present archival content is catalogued. Everything already on tapes and archived is listed to avoid duplicates.
+2. Other members who are running LTO or other archives are integrated into the "Library" system as external libraries where one can request archived content for their library.
+3. The items in queue to be archived are made available as an index similar to being in another library or marked as "In curation"
+4. Items that are in curation are sequentially, in order of some designated priority or in order of submission, to be acquired by some means.
+5. All items should have a content hash generated and be within a containing folder containing a torrent file as a checksum and metadata. We need a system of scripts for acquiring metadata for movies and anime and films. See what to archive: [Discovery.](/etarc/discover)
+6. For the purpose of this archive we will likely be considering tapes as shelves. Therefore, once a book is on a shelf it is archived successfully.
+7. Requests for archived content will be handled on a first come first serve basis at the discretion of the archivist. That is there may be some priority of release/retrieval of content for the archive teams to other archives or as a likely lower priority to the people discovering the content to be archived, due to the fact that redundancy is paramount across systems in the event of a disaster.
+8. A system for contacting other archivists privately should be put in place in the event that someone would like to request content stored on tapes in LTO format. The tapes would be mailed at cost, and at the discretion of the archivist, may be paid for with blank tapes. A self addressed return lable in a mailed package containing an empty LTO tape of the format used by the archive should suffice.
+9. I don't believe this project really goes without heavily encrypted and full anonymized decentralization with a peer review process and rank system for files to be added in a decentralized filestore. I also don't believe that one should be required to decide which approved files they are storing or necessarily be privy to them given that all members have the same moral outlook on the types of information being stored. while the information should also be made redundant. Specifically all things should and must be done under plausible deniability in order for the archive to be certainly lasting. That being said there should and must likely be four team members available to approve content for addition to the archive, one team member should not know whom, of the four, has approved the content, instead judging the content it's self, and the other of the four should, while the four remain anonymous (We all change our names and be strict about not divulging information about who we are, and just know that there are four of us and we ar those four), and should there be less than 7 more should be added, this point on the implementation may or may not later become strictly internal procedure. Additionally complaints about the archived contents should be anonymous to the four of the approval process and originate from one of the approved people. So it should not be saved and there should be a way for the four to seven to review what is actually running on the server and check that it matches the source code.
